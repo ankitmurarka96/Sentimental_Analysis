@@ -46,6 +46,8 @@ with st.expander('Analyze CSV'):
             return df.to_csv().encode('utf-8')
 
         csv = convert_df(df)
+        
+        #Analyzing data using a set of inputs in .csv file
 
         st.download_button(
             label="Download data as CSV",
